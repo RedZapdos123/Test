@@ -3,57 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Electronica</title>
+  <title>Checkout - Electronica</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Electronica</h1>
-    <input type="text" placeholder="Search for products..." class="search-bar">
   </header>
   <main>
-    <section class="product-list">
-      <div class="product-card">
-        <h2>ESP32 WROOM</h2>
-        <p>Price: ₹300</p>
-        <p>A powerful microcontroller with Wi-Fi and Bluetooth.</p>
-        <a href="#buy-form" class="buy-button">Buy</a>
-      </div>
-      <div class="product-card">
-        <h2>ESP32</h2>
-        <p>Price: ₹250</p>
-        <p>Affordable and versatile microcontroller with Wi-Fi.</p>
-        <a href="#buy-form" class="buy-button">Buy</a>
-      </div>
-      <div class="product-card">
-        <h2>STM32 Blue Pill</h2>
-        <p>Price: ₹200</p>
-        <p>Low-cost microcontroller with great performance.</p>
-        <a href="#buy-form" class="buy-button">Buy</a>
-      </div>
-      <div class="product-card">
-        <h2>STM32 Black Pill</h2>
-        <p>Price: ₹250</p>
-        <p>Compact microcontroller with advanced features.</p>
-        <a href="#buy-form" class="buy-button">Buy</a>
-      </div>
-      <div class="product-card">
-        <h2>Raspberry Pi Pico W</h2>
-        <p>Price: ₹400</p>
-        <p>Microcontroller with wireless capabilities.</p>
-        <a href="#buy-form" class="buy-button">Buy</a>
-      </div>
-      <div class="product-card">
-        <h2>Raspberry Pi 2</h2>
-        <p>Price: ₹350</p>
-        <p>Popular SBC for various DIY projects.</p>
-        <a href="#buy-form" class="buy-button">Buy</a>
-      </div>
+    <section class="cart">
+      <h2>Cart</h2>
+      <ul class="cart-items">
+        <li>ESP32 WROOM - ₹300</li> <!-- Replace with dynamic data if using a server-side language -->
+        <li>STM32 Blue Pill - ₹200</li>
+      </ul>
     </section>
-    <form id="buy-form" class="buy-form">
+    <form class="buy-form">
       <h2>Checkout</h2>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
       <label for="address">Address:</label>
       <textarea id="address" name="address" rows="4" required></textarea>
       <button type="submit">Pay</button>
